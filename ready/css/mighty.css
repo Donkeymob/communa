@@ -139,7 +139,20 @@ textarea.form-control {
 .mighty-subheader{
   margin-top: 50px;
   padding: 4em 0;
-  background: #0085c4 url('../images/mighty-subheader-bg.png');
+  background-color: #0085c4;
+  background-image: url('holder'), url('../images/mighty-subheader-bg.png');
+  background-position: center, center;
+  background-repeat: no-repeat, repeat;
+}
+body.rewards .mighty-subheader{
+  background-image: url('../images/header-bg2.jpg'), url('../images/mighty-subheader-bg.png');
+}
+body.faq .mighty-subheader{
+  background-image: url('../images/header-bg3.jpg'), url('../images/mighty-subheader-bg.png');
+  background-position: center 75%, center;
+}
+body.my-profile .mighty-subheader{
+  background-image: url('../images/header-bg4.jpg'), url('../images/mighty-subheader-bg.png');
 }
 
 .mighty-submsg h1{
@@ -157,7 +170,10 @@ textarea.form-control {
 .mighty-header-status{
   margin-top: 50px;
   padding: 2em 0;
-  background: #0085c4 url('../images/mighty-subheader-bg.png');
+  background-color: #0085c4;
+  background-image: url('../images/header-bg1.jpg'), url('../images/mighty-subheader-bg.png');
+  background-position: center 70%, center;
+  background-repeat: no-repeat, repeat;
 }
 
 .mighty-header-status h4{
