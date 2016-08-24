@@ -172,7 +172,7 @@ textarea.form-control {
     blink-caret .75s step-end infinite;
 }
 .typewrite1::before{
-  content: "";
+  /*content: "";*/
   animation: switch-text 7s infinite;
 }
 
@@ -187,10 +187,10 @@ textarea.form-control {
   50% { border-color: orange; }
 }
 @keyframes switch-text{
-  0% { content: "Give Opinion"; }
+/*  0% { content: "Give Opinion"; }
   49% { content: "Give Opinion"; }
   50% { content: "Earn Rewards" ; }
-  100% { content: "Earn Rewards" ; }
+  100% { content: "Earn Rewards" ; }*/
 }
 
 /*Mighty Subheader*/
