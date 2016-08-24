@@ -232,7 +232,7 @@ body.privacy-policy .mighty-subheader, body.terms .mighty-subheader{
 /*Mighty Header Status*/
 .mighty-header-status{
   margin-top: 50px;
-  padding: 1.2em 0 0.88em;
+  padding: 1em 0 1.1em;
   background-color: #0085c4;
   background-image: url(empty), url('../images/mighty-subheader-bg.png');
   background-position: center 75%, center;
@@ -266,11 +266,15 @@ h5.mighty-progress-current-points{
   border: 2px solid #fff;
   color: #0085c4;
   width: 100%;
-  margin-bottom: 0.5em;
   font-size: 0.95em;
   padding: 8px 12px;
   box-shadow: 2px 2px 6px #000;
   transition: all 333ms;
+}
+@media(max-width:767px){
+  .mighty-header-status-btn{
+    margin-bottom: 0.5em;
+  }
 }
 
 .mighty-header-status-btn:hover{
@@ -283,9 +287,11 @@ h5.mighty-progress-current-points{
 }
 
 .mighty-progress{
-  height: 24px;
-  margin-bottom: 22px;
-  border-radius: 6px;
+  text-align: center;
+  height: 28px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+  border-radius: 14px/50%;
   border: 2px solid #fff;
   box-shadow: 2px 2px 5px #3b3b3b;
   background: #929292;
@@ -294,15 +300,35 @@ h5.mighty-progress-current-points{
   background: linear-gradient(to bottom,  #929292 0%,#c4c4c4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#929292', endColorstr='#c4c4c4',GradientType=0 );
 }
-
-.mighty-progress .progress-bar{
-  background: #b4e391;
-  background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 50%, #b4e391 100%);
-  background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-  background: linear-gradient(to bottom,  #b4e391 0%,#61c419 50%,#b4e391 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
+@media (max-width:992px) {
+  .mighty-progress{
+    margin-bottom: 1em;
+  }
 }
 
+.mighty-progress .progress-bar{
+  text-align: right;
+  font-size: 1.06em;
+  line-height: 1.4;
+  color: #212121;
+  background: #b4e391;
+  background: -moz-linear-gradient(top,  #b4e391 0%, #61c419 63%, #b4e391 100%);
+  background: -webkit-linear-gradient(top,  #b4e391 0%,#61c419 63%,#b4e391 100%);
+  background: linear-gradient(to bottom,  #b4e391 0%,#61c419 63%,#b4e391 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=0 );
+  border-radius: 12px/50%;
+  border-right: 2px solid #38AA16;
+}
+.mighty-progress .progress-bar .inside{
+  margin-right: 24px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+.mighty-progress .progress-bar .inside label{
+  font-size: 0.7em;
+  font-weight: normal;
+  text-transform: uppercase;
+}
 /*Mighty Form*/
 .mighty-header-form-wrapper{
   margin: 0;
