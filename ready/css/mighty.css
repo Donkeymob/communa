@@ -180,6 +180,7 @@ textarea.form-control {
   0% { width: 0; }
   50% { width: 100%; }
   92% { width:  100%; }
+  98% { width: 0; }
   100% { width: 0; }
 }
 @keyframes blink-caret{
