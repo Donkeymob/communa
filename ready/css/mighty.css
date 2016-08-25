@@ -157,25 +157,20 @@ textarea.form-control {
 }
 
 /* typewriter animation */
-.typewrite1, .typewrite2{
+.typewrite{
   display: block;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .13em solid #000; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 3px; /* Adjust as needed */
 }
-.typewrite1{
+.typewrite{
   width: 0;
   animation: 
     typing 3.5s steps(12, end) infinite,
     blink-caret .75s step-end infinite;
 }
-.typewrite1::before{
-  /*content: "";*/
-  animation: switch-text 7s infinite;
-}
-
 @keyframes typing{
   0% { width: 0; }
   50% { width: 100%; }
@@ -185,13 +180,7 @@ textarea.form-control {
 }
 @keyframes blink-caret{
   from,to { border-color: transparent; }
-  50% { border-color: orange; }
-}
-@keyframes switch-text{
-/*  0% { content: "Give Opinion"; }
-  49% { content: "Give Opinion"; }
-  50% { content: "Earn Rewards" ; }
-  100% { content: "Earn Rewards" ; }*/
+  50% { border-color: #0085c4; }
 }
 
 /*Mighty Subheader*/
