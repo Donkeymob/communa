@@ -8,11 +8,17 @@ $(document).ready (function(){
             });
 
   var type_text = $('#type_text');
+  type_text.text(type_text.attr('data-tw-a'));
   // sync with css animation
-  // type_text.text('Give Opinion').delay(2000).text('Earn rewards');
-  type_text.text('give opinion');
-  var switch_text_timer = window.setTimeout( switch_text, 2000 );
+  var switch_text_timer = window.setInterval( switch_text, type_text.attr('data-tw-time') );
+  var toggler = 0;
   function switch_text(){
-  	type_text.text('earn rewards')
+  	if(toggler === 0){
+  		type_text.text(type_text.attr('data-tw-b'));
+  		toggler = 1;
+  	}else{
+  		type_text.text(type_text.attr('data-tw-a'));
+  		toggler = 0;
+  	}
   }
 });
